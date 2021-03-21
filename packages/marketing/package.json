@@ -9,6 +9,7 @@
     "@coreui/coreui": "^3.4.0",
     "@coreui/vue": "^3.2.9",
     "vue": "^3.0.0",
+    "vue-router": "^4.0.5",
     "vuex": "^4.0.0"
   },
   "devDependencies": {

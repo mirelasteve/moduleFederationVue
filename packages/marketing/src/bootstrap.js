@@ -1,15 +1,16 @@
 import { createApp } from 'vue';
+import router from '../router/index';
 import store from '../components/vuex/store/index';
 import CoreuiVue from '@coreui/vue';
-import Marketing from '../components/Marketing.vue';
+import Marketing from '../components/App.vue';
 
 
 const mount = (el) => {
-    console.log(store.state.MainMarketing.marketingProducts[0]);
     
     const app = createApp(Marketing);
     app.use(CoreuiVue)
     app.use(store);
+    app.use(router)
     app.mount(el)
 }
 
